@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Hero } from "@/components/hero";
 import { FeatureLedger } from "@/components/feature-ledger";
 import { VisionShowcase } from "@/components/vision-showcase";
@@ -10,6 +12,8 @@ export default function Home() {
       <FeatureLedger />
       <VisionShowcase />
       <CtaBand />
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
